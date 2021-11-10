@@ -62,7 +62,6 @@ h2 {
 }
 
 .contactInfo ul li span {
-    color: rgb(25, 16, 66);
     font-weight: 250;
 }
 
@@ -81,6 +80,14 @@ h2 {
     left: 0;
     height: 100%;
     background: rgba(219, 35, 35, 0.815);
+}
+
+a {
+    text-decoration: none;
+}
+
+li span.text-2 {
+    color: rgb(26, 65, 243);
 }
 
 @media (max-width: 1000px) {
@@ -102,32 +109,19 @@ h2 {
 }
 
 #myBtn {
-background-color: rgba(219, 35, 35, 0.815);
+ background-color: rgba(219, 35, 35, 0.815);
   border-radius: 3px;
   border: 1px solid #7aa7c7;
   box-shadow: rgba(255, 255, 255, .7) 0 1px 0 0 inset;
-  box-sizing: border-box;
   color: rgba(49, 43, 51, 0.815);
-
-  cursor: pointer;
-  display: inline-block;
   font-family: -apple-system,system-ui,"Segoe UI","Liberation Sans",sans-serif;
   font-size: 13px;
-  font-weight: 400;
   line-height: 1.15385;
   margin: 0;
-  outline: none;
+  margin-bottom: 15px;
   padding: 8px .8em;
-  position: relative;
-  text-align: center;
   text-decoration: none;
-  user-select: none;
-  touch-action: manipulation;
-  vertical-align: baseline;
-  white-space: nowrap;
 }
-
-
 
 #myBtn:hover,
 #myBtn:focus {
