@@ -1,51 +1,31 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
 *
-{
+/*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-}
-
-/*body {
-    background: lightblue;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-} 
-
-.container {
-
 }*/
 
-.header {
-    background-color: rgb(255, 160, 71);
+.container-1 {
+    background: rgb(255, 160, 71);
+    height: 250px;
+    position: relative;
 }
 
 body {
-    background-color: rgb(240, 248, 248);
+    background: rgb(240, 248, 248);
 }
-
-/*.img-photo {
-    position: relative;
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    overflow: hidden;
-    top: 70px;
-    left: 200px;
-}*/
 
 img {
+    position: absolute;
     width: 200px;
     height: 200px;
-    object-fit: cover;
     border-radius: 50%;
-}
-
-.col-md-4 {
-    background-color: rgb(194, 195, 199);
+    object-fit: cover;
+    overflow: hidden;
+    top: 10px;
+    left: 200px;
 }
 
 h1 {
@@ -53,7 +33,23 @@ h1 {
     font-size: 3.5em;
     text-transform: uppercase;
     left: 50px;
+    text-align: center;
+    top: 50px;
 
+}
+
+h2 {
+    color: rgba(219, 35, 35, 0.815);
+    text-align: center;
+    font-size: 2.em;
+}
+
+.title {
+    color: rgba(219, 35, 35, 0.815);
+}
+
+.col-md-4 {
+    background: rgb(194, 195, 199);
 }
 
 .contactInfo ul li{
@@ -71,5 +67,31 @@ h1 {
     color: rgb(25, 16, 66);
     font-weight: 250;
 }
+
+.contactInfo.language .parcent {
+    position: relative;
+    width: 100%;
+    height: 6px;
+    background: #081921;
+    display: block;
+    margin-top: 5px;
+}
+
+.contactInfo.language .parcent div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: rgba(219, 35, 35, 0.815);
+}
+
+@media (max-width: 1000px) {
+    .container-1
+    {
+        margin: 10px;
+    }
+}
+
+
 
 
