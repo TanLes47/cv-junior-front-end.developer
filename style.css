@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/*body {
+    background: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+} 
+
+.container {
+
+}*/
+
+
+
+
+
+.header {
+    background-color: rgb(255, 160, 71);
+}
+
+body {
+    background-color: rgb(240, 248, 248);
+}
+
+/*.img-photo {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    top: 70px;
+    left: 200px;
+}*/
+
+img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.col-md-4 {
+    background-color: rgb(194, 195, 199);
+}
+
+h1 {
+    color: rgba(219, 35, 35, 0.815);
+    font-size: 3.5em;
+    text-transform: uppercase;
+    left: 50px;
+
+}
+
+.contactInfo ul li{
+    list-style: none;
+}
+
+.contactInfo ul li .icon {
+    display: inline-block;
+    width: 30px;
+    font-size: 18px;
+    color: #060213;
+}
+
+.contactInfo ul li span {
+    color: rgb(25, 16, 66);
+    font-weight: 250;
+}
+
+
