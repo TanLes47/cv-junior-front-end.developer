@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
-*
-{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -8,61 +8,133 @@
 }
 
 body {
-    background: rgb(240, 248, 248);
+    background: rgb(245, 217, 231);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 }
 
-.container-1 {
-    background: rgb(255, 160, 71);
-    height: 250px;
+.container {
     position: relative;
-    
+    width: 100%;
+    max-width: 1000px;
+    min-height: 1000px;
+    background:rgb(240, 248, 248);
+    margin: 50px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 35px 55px rgba(0,0,0,0.1);
+
 }
 
-img {
-   position: absolute;
-   display: inline-block;
+.container .left_Side {
+    position: relative;
+    background: coral;
+    padding: 10px;
+}
+
+.profileText {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgb(245, 217, 231);
+
+}
+
+.profileText .imgBx {
+    position: relative;
     width: 200px;
     height: 200px;
     border-radius: 50%;
-    object-fit: cover;
-    top: 10px;
-    left: 200px;
+    overflow: hidden;
 }
 
-h1 {
-    color: rgba(219, 35, 35, 0.815);
-    font-size: 3.5em;
+.profileText .imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profileText h2 {
+    color: #fff;
+    font-size: 1.5em;
+    margin-top: 20px;
     text-transform: uppercase;
     text-align: center;
+    font-weight: 600;
+    line-height: 1.4em;
 }
 
-h2 {
-    color: rgba(219, 35, 35, 0.815);
-    text-align: center;
-    font-size: 2.em;
+.profileText h2 span {
+    font-size: 0.8em;
+    font-weight: 300;
+}
+
+.contactInfo {
+    padding-top: 40px;
 }
 
 .title {
-    color: rgba(219, 35, 35, 0.815);
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1.3em;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    margin-top: 5px;
 }
 
-.col-md-4 {
-    background: rgb(194, 195, 199);
+.contactInfo a {
+    color: #fff;
+    text-decoration: underline;
 }
 
-.contactInfo ul li{
+.contactInfo ul {
+    position: relative;
+}
+
+.contactInfo ul li {
+    position: relative;
     list-style: none;
+    margin: 10px 0;
+    cursor: pointer;
 }
 
 .contactInfo ul li .icon {
     display: inline-block;
     width: 30px;
     font-size: 18px;
-    color: #060213;
+    color: seashell;
 }
 
 .contactInfo ul li span {
-    font-weight: 250;
+    color: #fff;
+    font-weight: 300;
+}
+
+.contactInfo.education li {
+    margin-bottom: 15px;
+}
+
+.contactInfo.education h5 {
+    color: rgb(221, 210, 201);
+    font-weight: 300;
+}
+
+.contactInfo.education h4:ntn-child(2) {
+    color: #fff;
+    font-weight: 300;
+}
+
+.contactInfo.education h4 {
+    color: #fff;
+    font-weight: 300;
 }
 
 .contactInfo.language .parcent {
@@ -82,26 +154,84 @@ h2 {
     background: rgba(219, 35, 35, 0.815);
 }
 
-a {
-    text-decoration: none;
+.language_info li {
+    color: #fff;
 }
 
-li span.text-2 {
-    color: rgb(26, 65, 243);
+.technologies_info li {
+    color: #fff;
+}
+
+.technical_skills p {
+    color: #fff;
+}
+
+.container .right_Side {
+    position: relative;
+    background: rgba(255, 0, 0, 0.123);
+    padding: 40px;
+}
+
+.about {
+    margin-bottom: 50px;
+}
+
+.about:last-child {
+    margin-bottom: 0;
+}
+
+.title2 {
+    color: coral;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
+
+p {
+    color: #333;
+}
+
+.about .box {
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0;
+}
+
+.about .box .year_course {
+    min-width: 150px;
+}
+
+.about .box .year_course h5 {
+    text-transform: uppercase;
+    color:rgb(14, 1, 1);
+    font-weight: 600;
+}
+
+.about .box .text h4 {
+   text-transform: uppercase;
+   color: tomato; 
+   font-size: 16px;
 }
 
 @media (max-width: 1000px) {
-    .container-1
+    .container 
     {
         margin: 10px;
+        grid-template-columns: repeat(1,1fr);
     }
+
 }
 
-@media (max-width: 480px) {
-    img {
-        float: none;
-        display: table;
+@media (max-width: 600px) {
+    .about .box
+    {
+        flex-direction: column;
     }
+    .about .box .year_course {
+        margin-bottom: 5px;
+    }
+
 }
 
 #more {
@@ -111,9 +241,9 @@ li span.text-2 {
 #myBtn {
  background-color: rgba(219, 35, 35, 0.815);
   border-radius: 3px;
-  border: 1px solid #7aa7c7;
+  border: 1px solid #f8761f;
   box-shadow: rgba(255, 255, 255, .7) 0 1px 0 0 inset;
-  color: rgba(49, 43, 51, 0.815);
+  color: rgba(49, 43, 51, 0.938);
   font-family: -apple-system,system-ui,"Segoe UI","Liberation Sans",sans-serif;
   font-size: 13px;
   line-height: 1.15385;
@@ -125,19 +255,23 @@ li span.text-2 {
 
 #myBtn:hover,
 #myBtn:focus {
-  background-color: #b3d3ea;
+  background-color: #eab3c1;
   color: #2c5777;
 }
 
 #myBtn:focus {
-  box-shadow: 0 0 0 4px rgba(0, 149, 255, .15);
+  box-shadow: 0 0 0 4px rgba(255, 0, 76, 0.15);
 }
 
 #myBtn:active {
-  background-color: #a0c7e4;
+  background-color: #e4a0a0;
   box-shadow: none;
   color: #2c5777;
 }
+
+
+
+
 
 
 
